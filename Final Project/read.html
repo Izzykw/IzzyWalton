@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+    <header class="site-header">
+        <div class="logo">The Heiress</div>
+        <nav class="main-nav">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="factions.html">Factions</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <ul> 
+            </nav>
+            </header>
+            <section class="content-section">
+                <div class="content">
+                    <h1>Welcome to The Empire</h1>
+                    <p>My book is a large work in progress and I appreciate beta readers. Below I have provided the prologue to my book, and a section for you to provide comments!</p>
+                        <div class="pdf-container">
+                            <iframe
+
+                                src="Prologue for website.pdf" 
+                                title="Prologue of The Heiress" 
+                                width="100%" 
+                                height="600px" 
+                                style="border: none;">
+                            </iframe>
+                        </div>
+                     
+                        <div class="comments-section">
+                            <h2>Comments</h2>
+                            <form id="commentForm">
+                                <textarea id="commentInput" placeholder="Write your comment here..." required></textarea>
+                                <button type="submit">Add Comment</button>
+                            </form>
+                            <ul id="commentsList"></ul>
+                            <script>
+                                document.getElementById("commentForm").addEventListener("submit", function (e) {
+                                    e.preventDefault(); // Prevent the page from reloading on form submission
+                            
+                                    // Get the text from the input field
+                                    const commentInput = document.getElementById("commentInput");
+                                    const commentText = commentInput.value.trim();
+                            
+                                    if (commentText !== "") { // Ensure the input is not empty
+                                        // Create a new list item
+                                        const newComment = document.createElement("li");
+                                        newComment.textContent = commentText;
+                            
+                                        // Append the new comment to the comments list
+                                        const commentsList = document.getElementById("commentsList");
+                                        commentsList.appendChild(newComment);
+                            
+                                        // Clear the input field
+                                        commentInput.value = "";
+                                    } else {
+                                        alert("Please enter a comment before submitting!");
+                                    }
+                                });
+                            </script>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+    
+            <footer class="site-footer">
+                <div class="footer-content">
+                    <p>&copy; 2024 Isabella Walton. All Rights Reserved.</p>
+                    <!-- <ul class="footer-links"> -->
+                    </ul>
+                </div>
+            </footer>             
+</body>
+</html>

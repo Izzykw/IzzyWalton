@@ -1,0 +1,326 @@
+/* Full-height setup */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the container takes up the full height */
+}
+
+/* Header */
+.site-header {
+    background-image: url(https://t4.ftcdn.net/jpg/04/02/34/15/240_F_402341530_DY7SrGqLiymTMx0WAHR1pUr65EvxEUjI.jpg);
+    background-size: 700px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.site-header .logo {
+    font-size: 300%;
+    font-family: "Copperplate", fantasy;
+}
+
+/* Navigation */
+.main-nav {
+    position: sticky;
+    top: 0;
+    background: #222;
+    z-index: 1000;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+.content-section {
+    flex: 1; /* Allows this section to expand and fill available space */
+    background-image: url(actionshot.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+}
+.content-section-A {
+    flex: 1; /* Allows this section to expand and fill available space */
+    background-image: url(city.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+}
+.content-section-A h3 {
+    color: #b8b8b8; /* Subtle grey color for less emphasis */
+    font-size: 1.1rem; /* Slightly smaller than <p> */
+    font-weight: normal; /* Normal weight for subtle appearance */
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif; /* Serif font for a cohesive look */
+}
+.content-section-F {
+    flex: 1; /* Allows this section to expand and fill available space */
+    background-image: url(city.jpg);
+    background-size: cover;
+    background-position: 50% 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+    color: #fff; /* Sets a default text color */
+    overflow: hidden; /* Ensures content doesn’t overflow */
+}
+.content-section-F li{
+text-align:left;
+font-family: 'Roboto', sans-serif;
+color: #fff;
+}
+.content-section-F ul{
+text-decoration: solid;
+}
+
+.content-section-F h2, .content-section-A h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.content-section-F h3{
+    color: #b8b8b8; /* Subtle grey color for less emphasis */
+    font-size: 1.1rem; /* Slightly smaller than <p> */
+    font-weight: normal; /* Normal weight for subtle appearance */
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif; /* S
+/* /* } */
+}
+h3 .subscript {
+    font-size: 0.8em; /* Adjusts the subscript size */
+    vertical-align: sub; /* Aligns it as a subscript */
+    color: inherit; /* Matches the color of the h3 */
+    font-family: inherit; /* Matches the font of the h3 */
+}
+
+
+.content-section-F h2.pyros {
+    color: #D32F2F;
+    font-family: "Copperplate", fantasy;
+    text-align: left;
+    text-decoration: underline;
+}
+.content-section-F h2.aquarius {
+    color: #1976D2; /* BLUE for Aquarius */
+    font-family: "Copperplate", fantasy;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.content-section-F h2.stratos {
+    color: #757575; /* GREY for Stratos */
+    font-family: "Copperplate", fantasy;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.content-section-F h2.voltaire {
+    color: #FBC02D; /* YELLOW for Voltaire */
+    font-family: "Copperplate", fantasy;
+    text-align: left;
+    text-decoration: underline;
+}
+
+/* Style for general paragraph elements */
+.content-section-F p {
+    font-size: 1rem;
+    color: #f0f0f0; /* Light color for readability */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Optional: Add some styling for content layout */
+.content-section-A .faction-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+a {
+    color: white; /* Makes the link text white */
+    text-decoration: none; /* Removes underline (optional) */
+}
+
+a:hover {
+    color: lightgray; /* Changes color on hover (optional) */
+    text-decoration: underline; /* Adds underline on hover (optional) */
+}
+
+
+.content {
+    background: rgba(50, 50, 50, 0.8); /* Semi-transparent gray background */
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: "Copperplate", fantasy;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #ddd;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+}
+
+/* Footer */
+.site-footer {
+    background-image: url(https://t4.ftcdn.net/jpg/04/02/34/15/240_F_402341530_DY7SrGqLiymTMx0WAHR1pUr65EvxEUjI.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.instagram-logo {
+    width: 150px; /* Adjust the width to your preference */
+    height: 150px; /* Maintain the aspect ratio */
+    transition: transform 0.3s ease; /* Adds a hover effect */
+    border-radius: 50%;
+}
+
+
+.instagram-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+
+.rock-button {
+    width: 150px; /* Set width of the rock button */
+    height: 150px; /* Set height of the rock button */
+    position: center;
+    background-image: url('rockkk.jpg'); /* Replace with the path to your rock image */
+    background-size: contain; /* Ensures the image covers the button */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    border: none; /* Removes default button border */
+    border-radius: 50%; /* Makes the button round, adjust if needed for your image */
+    cursor: pointer; /* Changes cursor to pointer when hovering */
+    outline: none; /* Removes outline on focus */
+    box-shadow: 0 4px 6px rgba(239, 0, 0, 0.1); /* Optional shadow for 3D effect */
+    transition: transform 0.2s; /* Smooth animation on click */
+}
+
+.rock-button:hover {
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+.rock-button:active {
+    transform: scale(1); /* Resets size when clicked */
+}
+
+#pressCount {
+    font-size: 1rem;
+    margin-top: 15px;
+    color: #bababa; /* Subtle text color */
+}
+
+.pdf-container {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.comments-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #969696;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#commentInput {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#commentsList {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#commentsList li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #202020;
+    font-size: 16px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="site-header">
+            <div class="logo"> The Heiress</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="read.html">Read</a></li>
+                    <li><a href="factions.html">Factions</a></li>
+                </ul>
+            </nav>
+                </header>
+                <section class="content-section-A">
+                    <div class="content">
+                        <h1>Contact</h1>
+                        <a href="https://www.instagram.com/bell_writes/" target="_blank">
+                            <img src="https://img.freepik.com/free-vector/instagram-logo_1199-122.jpg?semt=ais_hybrid" alt="Instagram" class="instagram-logo" />
+                        </a>
+                        
+                        <!-- button -->
+                        <div class="app-container">
+                            <button id="rockButton" class="rock-button"></button>
+                            <p id="pressCount">You have pressed the rock 0 times.</p>
+                            <script>
+                                let pressCount = 0;
+                                document.getElementById('rockButton').addEventListener('click', function () {
+                                    pressCount++;
+                                    document.getElementById('pressCount').textContent = `You have pressed the rock ${pressCount} times.`;
+                                });
+                            </script>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/uKKqFwWUj6Y?si=CUjWRwwCheYf7XjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                       
+
+                        
+                    </div>
+                </section>
+ <footer class="site-footer">
+     <div class="footer-content">
+         <p>&copy; 2024 Isabella Walton. All Rights Reserved.</p>
+            <!-- <ul class="footer-links"> -->
+      </ul>
+    </div>
+</footer>             
+
+    
+</body>
+</html>
